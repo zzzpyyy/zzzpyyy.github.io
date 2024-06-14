@@ -8,6 +8,21 @@
     <language>en-gb</language>
     <lastBuildDate>Fri, 14 Jun 2024 16:36:12 +0800</lastBuildDate><atom:link href="https://zzzpyyy.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>数据库MySQL-索引</title>
+      <link>https://zzzpyyy.github.io/posts/%E6%95%B0%E6%8D%AE%E5%BA%93mysql-%E7%B4%A2%E5%BC%95/</link>
+      <pubDate>Fri, 14 Jun 2024 16:36:12 +0800</pubDate>
+      
+      <guid>https://zzzpyyy.github.io/posts/%E6%95%B0%E6%8D%AE%E5%BA%93mysql-%E7%B4%A2%E5%BC%95/</guid>
+      
+      <description>数据库是程序员工作以及面试过程中，首先先来一个查询一句检测一下基础知识是否牢靠。 题目：老师有一张签到表student，同学每签到一次就会产生一条记录，表字段有name和time。现在需要查询出签到次数最多的10名同学。
+select name, count(*) as sign_in_count from student group by name order by sign_in_count desc limit 10 // 另外的写法 SELECT name, sign_in_count FROM ( SELECT name, COUNT(*) AS sign_in_count FROM student GROUP BY name ) AS sign_in_counts ORDER BY sign_in_count DESC LIMIT 10 解释： 这一题主要是考察了排序，分组、以及limit的语法
+索引 数据库中最常用的就是索引，那么索引是什么呢？
+索引是什么 索引是一种数据结构，可以方便
+索引的结构 索引分类 如何使用索引 使用索引需要注意什么 索引的最佳实践 </description>
+      
+    </item>
+    
+    <item>
       <title>字节面试题</title>
       <link>https://zzzpyyy.github.io/posts/%E5%AD%97%E8%8A%82%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
       <pubDate>Wed, 12 Jun 2024 12:49:37 +0800</pubDate>
